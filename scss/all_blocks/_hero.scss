@@ -1,0 +1,141 @@
+.hero {
+    margin-bottom: 160px;
+}
+.hero__wrapper {
+    background-image: url(/images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1400px;
+    min-height: 600px;
+    height: 100%;
+    margin: 0 auto;
+    
+    @media only screen and (max-width: 960px) {
+        height: 680px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+.hero__container {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    height: 100%;
+    
+    @media only screen and (max-width: 960px) {
+        justify-content: center;
+        position: relative;
+    }
+    
+}
+
+.hero__inner {
+    text-align: center;
+    
+}
+.hero__box {
+    max-width: 500px;
+}
+.hero__hiddin {
+    
+    margin-bottom: 40px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    
+    @media only screen and (max-width: 760px) {
+        margin-bottom: 0;
+        margin-bottom: 24px;
+    }
+}
+.hero__fox {
+    padding-left: 94px;
+    max-width: 500px;
+    position: relative;
+    
+    @media only screen and (max-width: 960px) {
+        padding-left: 0;
+        position: static;
+    }
+}
+
+.hero__fox::before{
+    display: block;
+    content: " ";
+    background-image: url(/images/left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 14px;
+    position: absolute;
+    top: 25%;
+    left: -30%;
+    
+    @media only screen and (max-width: 960px) {
+        content: none;
+    }
+}
+
+.hero__fox::after{
+    display: block;
+    content: " ";
+    background-image: url(/images/right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 400px;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 19%;
+    left: 110%;
+    
+    @media only screen and (max-width: 960px) {
+        top: 76%;
+        left: 0%;
+    }
+    
+    @media only screen and (max-width: 731px) {
+        left: -21px;
+    }
+    
+    @media only screen and (max-width: 720px) {
+        left: -160px;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        left: -250px;
+    }
+    
+    
+    
+}
+
+.hero__text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    
+    
+    color: #FFFFFF;
+}
+
+.hero__button{
+    margin-top: 40px;
+    
+    @media only screen and (max-width: 760px) {
+        margin-top: 0;
+        margin-top: 32px;
+    }
+    
+    @media only screen and (max-width: 640px) {
+        
+    }
+}
